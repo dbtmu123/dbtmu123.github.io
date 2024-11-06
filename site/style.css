@@ -82,3 +82,12 @@ nav a:hover {
         text-align: left;
     }
 }
+
+#placeholderimage {
+    width: 200px; /* Initial width */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+#placeholderimage:hover {
+    cursor: pointer;
+}

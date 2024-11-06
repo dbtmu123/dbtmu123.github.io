@@ -5,7 +5,11 @@ function getName() {
 
 function enlargeImage() {
     var img = document.getElementById("placeholderimage");
-    img.style.width = "500px";
+    if (img.style.width === "200px" || img.style.width === "") {
+        img.style.width = "300px"; // Enlarged size
+    } else {
+        img.style.width = "200px"; // Back to original size
+    }
 }
 
 function showWelcomeMessage() {
