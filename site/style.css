@@ -106,3 +106,8 @@ nav a:hover {
 .home-page .content-container {
     text-align: center;
 }
+
+.portfolio-page .content-container,
+.contact-page .content-container {
+    text-align: left;
+}
