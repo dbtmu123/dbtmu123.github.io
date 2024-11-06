@@ -42,9 +42,27 @@ header {
     text-align: left; /* Aligns content to the left by default */
 }
 
-/* Home Page Specific Styling */
+/* Container to center the main content only on the home page */
 .home-page .content-container {
-    text-align: center; /* Centers content on the home page only */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Left-align content for the portfolio and other pages */
+.portfolio-page .content-container,
+.contact-page .content-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Additional styling for section headers and text */
@@ -133,3 +151,28 @@ hr {
         text-align: left;
     }
 }
+
+/* Navigation Styling */
+nav {
+    background-color: #2c3e50;
+    width: 160px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+nav a {
+    display: block;
+    color: #ffffff;
+    padding: 10px 15px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #1abc9c;
+    color: white;
+}
+
