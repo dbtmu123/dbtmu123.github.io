@@ -9,116 +9,54 @@ body {
     line-height: 1.6;
 }
 
-/* Header Styling */
-header {
+/* Smaller header style for portfolio and other non-home pages */
+.small-header {
     background-color: #2c3e50;
     color: white;
-    padding: 15px 0;
+    padding: 15px;
     text-align: center;
+    font-size: 24px;
     margin-bottom: 30px;
     border-bottom: 5px solid #2980b9;
 }
 
-h1 {
-    font-size: 32px;
-    margin: 0;
-}
-
-/* Headings Styling */
-h2 {
-    font-size: 24px;
-    color: #2980b9;
-    border-bottom: 2px solid #2980b9;
-    padding-bottom: 5px;
-    margin-top: 25px;
-}
-
-h3 {
-    font-size: 18px;
-    color: #2980b9;
-}
-
-/* Text Styling */
-p, ul, ol {
-    font-size: 16px;
-    color: #555;
-    margin: 10px 0;
-}
-
-/* Lists */
-ul, ol {
-    margin: 15px 0;
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 5px;
-}
-
-/* Link Styling */
-a {
-    color: #2980b9;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #1abc9c;
-    text-decoration: underline;
-}
-
-/* Horizontal Line Styling */
-hr {
-    border: 0;
-    border-top: 1px solid #ddd;
-    margin: 20px 0;
-}
-
-/* Navigation Bar Styling */
-nav {
-    background-color: #2c3e50;
-    width: 160px;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding-top: 20px;
-}
-
-nav a {
-    padding: 15px;
-    display: block;
-    font-size: 18px;
-    color: #ecf0f1;
-    text-decoration: none;
-}
-
-nav a:hover {
-    background-color: #2980b9;
-    color: #ecf0f1;
-}
-
-/* Section Styling */
-section {
-    margin-left: 180px;
+/* Container to center the main content */
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Image Styling */
-#placeholderimage {
-    width: 200px;
-    transition: transform 0.3s ease;
+/* Additional styling for section headers and text */
+.content-container h2 {
+    color: #2980b9;
+    font-size: 24px;
+    margin-top: 20px;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 8px;
+    text-align: left;
 }
 
-#placeholderimage:hover {
-    cursor: pointer;
-    transform: scale(1.2);
+/* Section Text Styling */
+.content-container p, 
+.content-container ul, 
+.content-container ol {
+    font-size: 16px;
+    text-align: left;
+    margin: 15px 0;
+    color: #555;
 }
 
-/* Container and Row Layout */
-.container {
+/* Styling for table container used in links and descriptions section */
+.table-container {
     display: table;
     width: 100%;
-    margin-left: 180px;
+    margin-top: 20px;
+    border-collapse: collapse;
 }
 
 .row {
@@ -127,57 +65,57 @@ section {
 
 .cell {
     display: table-cell;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ddd;
+    vertical-align: middle;
 }
 
-/* Footer Styling */
-footer {
-    font-size: 12px;
+/* Links in Table */
+.link-cell a {
+    color: #2980b9;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link-cell a:hover {
+    color: #1abc9c;
+    text-decoration: underline;
+}
+
+/* Width adjustments for cells in links and descriptions table */
+.link-cell {
+    width: 30%;
     text-align: center;
-    color: #7f8c8d;
-    margin: 20px;
 }
 
-/* Contact and Description Styling */
-.text-container {
-    background-color: #ecf0f1;
-    padding: 10px;
-    border-radius: 4px;
+.description-cell {
+    width: 70%;
+    text-align: left;
+    color: #555;
 }
 
-.link-container {
-    background-color: #bdc3c7;
-    padding: 10px;
-    border-radius: 4px;
+/* HR Styling */
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
 }
 
-/* Center content on home page */
-.content-container {
-    text-align: center;
-    margin-top: 50px;
-}
-
-#placeholderimage {
-    width: 200px; 
-    margin-top: 20px;
-}
-
-input[type="text"] {
-    padding: 8px;
-    font-size: 16px;
-    margin-top: 20px;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-#welcomeMessage {
-    font-size: 18px;
-    color: #2c3e50;
-    margin-top: 20px;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-container {
+        padding: 15px;
+    }
+    .small-header {
+        font-size: 20px;
+        padding: 10px;
+    }
+    .content-container h2 {
+        font-size: 20px;
+    }
+    .link-cell, .description-cell {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
 }
