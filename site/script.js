@@ -6,9 +6,9 @@ function getName() {
 function enlargeImage() {
     var img = document.getElementById("placeholderimage");
     if (img.style.width === "200px" || img.style.width === "") {
-        img.style.width = "300px"; // Enlarged size
+        img.style.width = "250px"; // Slightly larger size on click
     } else {
-        img.style.width = "200px"; // Back to original size
+        img.style.width = "200px"; // Return to original size on second click
     }
 }
 

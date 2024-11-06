@@ -83,11 +83,22 @@ nav a:hover {
     }
 }
 
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center content within the container */
+}
+
 #placeholderimage {
-    width: 200px; /* Initial width */
-    transition: transform 0.3s ease; /* Smooth transition effect */
+    width: 200px; /* Initial image width */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
 #placeholderimage:hover {
     cursor: pointer;
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
 }
