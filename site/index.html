@@ -7,23 +7,24 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Daanyaal's Portfolio</h1>
+        <h1>Welcome to My Home Page!</h1>
     </header>
 
     <nav>
         <a href="index.html">Home</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="contact.html">Contact</a>
+        <a href="social.html">Social</a> <!-- Added as shown in your screenshot -->
     </nav>
 
-    <section>
-        <h2>Welcome!</h2>
-        <p>Thank you for visiting my portfolio website. Here, you can explore my academic background, projects, and achievements. Feel free to browse around and learn more about my journey and work.</p>
+    <div class="content-container">
+        <h2>Welcome to My Portfolio!</h2>
         <img src="placeholderimage.jpg" alt="Welcome Image" id="placeholderimage">
-    </section>
+        <br><br>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button onclick="showWelcomeMessage()">Go to Portfolio</button>
+        <p id="welcomeMessage"></p>
+    </div>
 
-    <footer>
-        <p>&copy; 2024 Daanyaal's Portfolio</p>
-    </footer>
 </body>
 </html>

@@ -151,3 +151,33 @@ footer {
     padding: 10px;
     border-radius: 4px;
 }
+
+/* Center content on home page */
+.content-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#placeholderimage {
+    width: 200px; 
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#welcomeMessage {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-top: 20px;
+}
