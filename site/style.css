@@ -132,7 +132,7 @@ nav a:hover {
     left: 0;
     margin: 0;
     padding: 0;
-    background: #30347e;
+    background: #194c6e;
     overflow: hidden;
     z-index: -1; /* Ensure it stays in the background */
 }
