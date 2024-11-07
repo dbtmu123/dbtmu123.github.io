@@ -59,9 +59,74 @@
 
     <div class="content-container">
         <section>
-            <h2>Get in Touch</h2>
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <!-- Single-line Text Input for Name -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <br><br>
+                
+                <!-- Email Input Field -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                <br><br>
+                
+                <!-- Multi-line Text Input for Message -->
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                <br><br>
+                
+                <!-- Radio Buttons for Employment Type -->
+                <p>Employment Type:</p>
+                <label><input type="radio" name="employmentType" value="Full-Time"> Full-Time</label>
+                <label><input type="radio" name="employmentType" value="Part-Time"> Part-Time</label>
+                <label><input type="radio" name="employmentType" value="Internship"> Internship</label>
+                <br><br>
+                
+                <!-- Checkboxes for Skills -->
+                <p>Relevant Skills:</p>
+                <label><input type="checkbox" name="skills" value="JavaScript"> JavaScript</label>
+                <label><input type="checkbox" name="skills" value="Python"> Python</label>
+                <label><input type="checkbox" name="skills" value="Project Management"> Project Management</label>
+                <label><input type="checkbox" name="skills" value="Data Analysis"> Data Analysis</label>
+                <br><br>
+                
+                <!-- Dropdown for How You Found Me -->
+                <label for="referral">How did you find me?</label>
+                <select id="referral" name="referral">
+                    <option value="LinkedIn">LinkedIn</option>
+                    <option value="Personal Website">Personal Website</option>
+                    <option value="Job Board">Job Board</option>
+                    <option value="Referral">Referral</option>
+                </select>
+                <br><br>
+                
+                <!-- Submit and Clear Buttons -->
+                <button type="button" onclick="submitForm()">Submit</button>
+                <button type="reset">Clear</button>
+            </form>
+        </section>
+        
+        <script>
+            function submitForm() {
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+                const employmentType = document.querySelector('input[name="employmentType"]:checked')?.value;
+                const skills = Array.from(document.querySelectorAll('input[name="skills"]:checked')).map(cb => cb.value);
+                const referral = document.getElementById('referral').value;
+                
+                const formData = { name, email, message, employmentType, skills, referral };
+                localStorage.setItem('contactFormData', JSON.stringify(formData));
+                alert('Your information has been saved!');
+            }
+        </script>
+        <section>
             <p>You can reach me via email at <a href="mailto:dbhagaria@torontomu.ca">dbhagaria@torontomu.ca</a>.</p>
         </section>
+
+
+
     </div>
 </body>
 </html>

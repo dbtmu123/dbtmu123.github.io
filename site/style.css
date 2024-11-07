@@ -420,3 +420,85 @@ nav a:hover {
     bottom: -72px;
     animation-delay: 40s;
 }
+
+/*HERE
+
+/* Contact Form Styling */
+form#contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form#contactForm label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+form#contactForm input[type="text"],
+form#contactForm input[type="email"],
+form#contactForm textarea,
+form#contactForm select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form#contactForm textarea {
+    resize: vertical;
+}
+
+form#contactForm input[type="radio"],
+form#contactForm input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+form#contactForm p {
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+form#contactForm button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form#contactForm button[type="button"] {
+    background-color: #2980b9;
+    color: white;
+}
+
+form#contactForm button[type="reset"] {
+    background-color: #e74c3c;
+    color: white;
+    margin-left: 10px;
+}
+
+form#contactForm button:hover {
+    opacity: 0.9;
+}
+
+/* Styling for Radio and Checkbox Options */
+form#contactForm label input[type="radio"] + label,
+form#contactForm label input[type="checkbox"] + label {
+    font-weight: normal;
+    color: #555;
+}
+
+/* Additional form spacing */
+form#contactForm br {
+    display: none; /* Reduce extra space */
+}
